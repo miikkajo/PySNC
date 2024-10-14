@@ -1090,7 +1090,7 @@ class GlideRecord(object):
         :param fmt:
         :return: list
         """
-        return [record.serialize(display_value, fields, fmt, exclude_reference_link) for record in self]
+        return [record.serialize(display_value=display_value, fields=fields, fmt=fmt, exclude_reference_link=exclude_reference_link) for record in self]
 
     def to_pandas(self, columns=None, mode='smart'):
         """
